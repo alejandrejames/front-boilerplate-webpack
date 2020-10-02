@@ -1,0 +1,26 @@
+.overflow {
+  overflow: hidden;
+}
+
+.pc {
+  @include sp {
+    display: none;
+  }
+}
+
+.sp {
+  display: none;
+  @include sp {
+    display: block;
+  }
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -128px;
+  visibility: hidden;
+  @include sp {
+    top: -45px;
+  }
+}

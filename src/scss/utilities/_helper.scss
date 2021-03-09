@@ -3,6 +3,7 @@
 }
 
 .pc {
+  display: block;
   @include sp {
     display: none;
   }
@@ -12,6 +13,20 @@
   display: none;
   @include sp {
     display: block;
+  }
+}
+
+.pc-flex {
+  display: flex;
+  @include sp {
+    display: none;
+  }
+}
+
+.sp-flex {
+  display: none;
+  @include sp {
+    display: flex;
   }
 }
 
